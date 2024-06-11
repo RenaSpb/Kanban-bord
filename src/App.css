@@ -1,10 +1,42 @@
+/* App.css */
+body {
+  background: repeating-linear-gradient(
+          #f7f4f3,
+          #f4f2f0 14px,    #bebcb9 15px
+  );
+  background-size: 100% 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.task-card {
+  background: linear-gradient(115deg, var(--task-color), #eff4f3);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.1); /* Увеличенные тени для более выраженного 3D-эффекта */
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: lightgray;
+  padding: 10px;
+
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -36,3 +68,32 @@
     transform: rotate(360deg);
   }
 }
+.col {
+  padding-top: 15px;
+}
+
+.head {
+  padding-bottom: 21px;
+}
+
+ .add-task-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+ }
+.column-title {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.column-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #787575;
+}
+
