@@ -10,7 +10,7 @@ import { fetchTasks } from "./API/tasks";
 function App() {
   const dispatch = useDispatch();
   const statuses = useSelector(state => state.statuses);
-  const tasks = useSelector(state => state.tasks);
+
 
   useEffect(() => {
     dispatch(fetchStatuses());
