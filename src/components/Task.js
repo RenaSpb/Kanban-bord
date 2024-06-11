@@ -57,7 +57,7 @@ const Task = (props) => {
                 <h5 className="card-title">{task.name}</h5>
 
                 <div className="card-subtitle mb-2 text-muted">
-                    <ArrowUp disabled={task.priority >= 10} className="cursor" onClick={onPriorityUp} />
+                    <ArrowUp disabled={task.priority >= 5} className="cursor" onClick={onPriorityUp} />
 
                     {' '} Priority:  {task.priority} {' '}
                     <ArrowDown disabled={task.priority <= 1} className="cursor" onClick={onPriorityDown} />
