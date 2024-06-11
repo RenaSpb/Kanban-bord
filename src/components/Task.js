@@ -24,7 +24,7 @@ const Task = (props) => {
     };
 
     const onPriorityUp = () => {
-        if (task.priority < 10) {
+        if (task.priority < 5) {
             dispatch(changePriority(task._id, task.priority + 1));
         }
     };
