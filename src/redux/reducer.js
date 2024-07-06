@@ -10,7 +10,7 @@ export const reducer = (state = initialState, action) => {
 
         case 'FETCH_TASKS':
             action.payload.sort((a, b) =>
-                b.priority - a.priority);
+                a.priority - b.priority);
             return { ...state, tasks: action.payload };
 
         default:
